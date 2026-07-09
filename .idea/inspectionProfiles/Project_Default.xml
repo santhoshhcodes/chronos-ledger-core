@@ -1,0 +1,47 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="websockets" />
+          <option value="pymysql" />
+          <option value="psycopg2" />
+          <option value="pyodbc" />
+          <option value="requests" />
+          <option value="pydub" />
+          <option value="soundfile" />
+          <option value="numpy" />
+          <option value="sounddevice" />
+          <option value="scipy" />
+          <option value="faster-whisper" />
+          <option value="ffmpeg-python" />
+          <option value="ffmpeg" />
+          <option value="torch" />
+          <option value="onnxruntime" />
+          <option value="groq" />
+          <option value="python-dotenv" />
+          <option value="sqlalchemy" />
+          <option value="fastapi" />
+          <option value="uvicorn" />
+          <option value="pymssql" />
+          <option value="faiss-cpu" />
+          <option value="sentence-transformers" />
+          <option value="pandas" />
+          <option value="openpyxl" />
+          <option value="datetime" />
+          <option value="black" />
+          <option value="jose" />
+          <option value="langchain" />
+          <option value="langchain-community" />
+          <option value="subprocess" />
+          <option value="uuid" />
+          <option value="os" />
+          <option value="base64" />
+          <option value="alembic" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="SqlNoDataSourceInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+  </profile>
+</component>
