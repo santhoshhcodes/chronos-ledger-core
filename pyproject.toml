@@ -1,42 +1,30 @@
-[build-system]
-requires = ["setuptools>=61.0.0", "wheel"]
-build-backend = "setuptools.build_meta"
-
-[project]
-name = "chronos_ledger"
+[tool.poetry]
+name = "chronos-ledger"
 version = "0.1.0"
 description = "Multi-Tenant B2B Attendance & Automated Payroll SaaS Engine"
+authors = ["Santhosh Kannan <santhoshkannan8@example.com>"]
 readme = "README.md"
-requires-python = ">=3.11"
-authors = [
-    { name = "Santhosh Kannan", email = "santhoshkannan8@example.com" }
-]
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "Framework :: FastAPI",
-    "Topic :: Office/Business :: Financial :: Accounting"
-]
+package-mode = false  # ◄── This stops Poetry from looking for a package folder
 
-# ---- Industry-Level Unified Dependency Array ----
-dependencies = [
-    "fastapi>=0.110.0",
-    "uvicorn[standard]>=0.28.0",
-    "pydantic>=2.6.0",
-    "pydantic-settings>=2.2.1",
-    "sqlalchemy[asyncio]>=2.0.28",
-    "alembic>=1.13.0",
-    "aioodbc>=0.5.0",
-    "python-jose[cryptography]>=3.3.0",
-    "passlib[bcrypt]>=1.7.4",
-    "redis>=5.0.0",
-    "structlog>=24.1.0"
-]
+[tool.poetry.dependencies]
+python = ">=3.11"
+fastapi = "^0.110.0"
+uvicorn = { extras = ["standard"], version = "^0.28.0" }
+pydantic = "^2.6.0"
+pydantic-settings = "^2.2.1"
+sqlalchemy = { extras = ["asyncio"], version = "^2.0.28" }
+alembic = "^1.13.0"
+aioodbc = "^0.5.0"
+python-jose = { extras = ["cryptography"], version = "^3.3.0" }
+passlib = { extras = ["bcrypt"], version = "^1.7.4" }
+redis = "^5.0.0"
+structlog = "^24.1.0"
 
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["app*"]
+[build-system]
+requires = ["poetry-core>=2.0.0"]
+build-backend = "poetry.core.masonry.api"
 
-# ---- Formatter & Linter Engine Configurations ----
+# ---- Tooling Configurations ----
 [tool.black]
 line-length = 88
 target-version = ['py311']
