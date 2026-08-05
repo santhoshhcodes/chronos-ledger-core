@@ -1,4 +1,4 @@
-# 🏛️ Chronos Ledger Core
+# Chronos Ledger Core
 
 > **Enterprise B2B Multi-Tenant Engine for Biometric Attendance Tracking & Immutable Payroll Accounting**
 
@@ -10,7 +10,7 @@
 
 ---
 
-# 📌 Executive Summary
+# Executive Summary
 
 **Chronos Ledger** is a high-performance, asynchronous B2B SaaS backend engineered for strict multi-tenant data isolation, high-concurrency biometric attendance ingestion, and automated transactional payroll accounting.
 
@@ -18,7 +18,7 @@ Unlike conventional multi-tenant applications that rely purely on application-le
 
 ---
 
-# 🎯 Problem Statement
+# Problem Statement
 
 Traditional HRMS & ERP platforms suffer from three major issues:
 
@@ -41,7 +41,7 @@ Chronos Ledger solves these problems through:
 
 ---
 
-# 🔄 End-to-End Request Flow
+# End-to-End Request Flow
 
 ```text
  Field Employee Mobile App
@@ -83,7 +83,7 @@ Payroll Ledger
 
 ---
 
-# 🏗️ System Architecture
+# System Architecture
 
 ```text
 ┌──────────────────────────────────────────────────────────────────────────┐
@@ -133,7 +133,7 @@ Payroll Ledger
 
 ---
 
-# 🗄️ Database Architecture
+# Database Architecture
 
 ## Tier 1 — Platform Shared Tables
 
@@ -162,7 +162,7 @@ These tables are protected using PostgreSQL Row Level Security.
 
 ---
 
-# 🔐 Multi-Tenant Security
+# Multi-Tenant Security
 
 Every authenticated request follows this sequence:
 
@@ -190,7 +190,7 @@ No application query can accidentally access another tenant's records.
 
 ---
 
-# ⚡ Key Features
+# Key Features
 
 - Enterprise Multi-Tenant SaaS
 - PostgreSQL Row Level Security (RLS)
@@ -211,7 +211,7 @@ No application query can accidentally access another tenant's records.
 
 ---
 
-# 📂 Repository Structure
+# Repository Structure
 
 ```text
 chronos_ledger/
@@ -259,7 +259,7 @@ chronos_ledger/
 
 ---
 
-# 🚀 Local Development
+# Local Development
 
 ## Requirements
 
@@ -321,7 +321,7 @@ http://localhost:8000/redoc
 
 ---
 
-# 🧱 Technology Stack
+# Technology Stack
 
 | Layer | Technology |
 |--------|------------|
@@ -340,7 +340,7 @@ http://localhost:8000/redoc
 
 ---
 
-# 📈 Payroll Processing Flow
+# Payroll Processing Flow
 
 ```text
 Attendance Telemetry
@@ -369,7 +369,7 @@ Immutable Monthly Statement
 
 ---
 
-# 🔄 Attendance Flow
+# Attendance Flow
 
 ```text
 Employee Opens App
@@ -398,7 +398,7 @@ Attendance Stored
 
 ---
 
-# 📌 Roadmap
+# Roadmap
 
 - Multi-Tenant SaaS
 - Attendance Engine
@@ -418,7 +418,7 @@ Attendance Stored
 
 ---
 
-# 👨‍💻 Author
+# Author
 
 ## Santhosh Kannan
 
@@ -436,7 +436,7 @@ Specialized in:
 
 ---
 
-# 📄 License
+# License
 
 This project is intended as an enterprise SaaS platform and portfolio showcase.
 
